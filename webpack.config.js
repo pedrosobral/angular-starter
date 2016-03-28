@@ -5,7 +5,7 @@ module.exports = {
     debug: true,
     minimize: true,
     entry: {
-        main: './src/app/app.module.js'
+        main: './index.js'
     },
     output: {
         path: __dirname + '/dist',
