@@ -1,0 +1,12 @@
+# Mac files
+.DS_STORE
+
+# node
+node_modules
+
+# build files
+dist/
+
+# Atom files
+.sync-config.cson
+

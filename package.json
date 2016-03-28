@@ -1,0 +1,30 @@
+{
+  "name": "base-angular",
+  "version": "1.0.0",
+  "description": "Starter for Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrosobral/angular-starter.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Pedro Henrique <pedrosobralxv@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/pedrosobral/angular-starter/issues"
+  },
+  "homepage": "https://github.com/pedrosobral/angular-starter#readme",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-animate": "^1.5.3",
+    "angular-aria": "^1.5.3",
+    "angular-material": "^1.0.6",
+    "angular-messages": "^1.5.3",
+    "angular-ui-router": "^1.0.0-alpha.1"
+  }
+}
