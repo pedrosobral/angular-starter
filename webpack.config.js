@@ -2,6 +2,7 @@ var webpack = require("webpack");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    devtool: 'source-map', // inline-source-map
     debug: true,
     minimize: true,
     entry: {
@@ -11,20 +12,38 @@ module.exports = {
         path: __dirname + '/dist',
         filename: 'bundle.js'
     },
+    // ISPARTA LOADER
+    // Reference: https://github.com/deepsweet/isparta-loader
+    isparta: {
+        embedSource: true,
+        noAutoWrap: true,
+        // these babel options will be passed only to isparta and not to babel-loader
+        babel: {
+            presets: ['es2015']
+        }
+    },
     module: {
         loaders: [{
-            test: /\.js$/,
-            loader: 'babel',
-            exclude: [/app\/lib/, /node_modules/],
-            query: {
-                   presets: ['es2015']
-               }
-        }, {
             test: /\.html$/,
             loader: 'raw'
         }, {
             test: /\.css$/,
             loader: 'style!css'
+        }],
+        preLoaders: [{
+            test: /\.js$/,
+            loader: 'babel',
+            exclude: [/app\/lib/, /node_modules/],
+            query: {
+                presets: ['es2015']
+            }
+        }, {
+            test: /\.js$/,
+            exclude: [
+                /node_modules/,
+                /\.spec\.js$/
+            ],
+            loader: 'isparta'
         }]
     },
     plugins: [
