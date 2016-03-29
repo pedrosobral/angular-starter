@@ -1,7 +1,7 @@
 import angular from 'angular';
 import AppComponent from './app.component';
 
-var app = angular
+let app = angular
     .module('app', [])
     .component('app', AppComponent);
 
