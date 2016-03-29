@@ -11,6 +11,19 @@ module.exports = {
         path: __dirname + '/dist',
         filename: 'bundle.js'
     },
+    module: {
+        loaders: [{
+            test: /\.js$/,
+            exclude: [/app\/lib/, /node_modules/],
+            loader: 'babel'
+        }, {
+            test: /\.html$/,
+            loader: 'raw'
+        }, {
+            test: /\.css$/,
+            loader: 'style!css'
+        }]
+    },
     plugins: [
         // Injects bundles in your index.html instead of wiring all manually.
         // It also adds hash to all injected assets so we don't have problems
