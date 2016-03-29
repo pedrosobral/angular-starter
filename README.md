@@ -1,4 +1,4 @@
-[![Dependency Status](https://david-dm.org/pedrosobral/angular-starter.svg?style=flat-square)](https://david-dm.org/pedrosobral/angular-starter#info=dependencies)
+[![devDependency Status](https://img.shields.io/david/dev/pedrosobral/angular-starter.svg?style=flat-square)](https://david-dm.org/pedrosobral/angular-starter#info=devDependencies)
 
 # Starter: Angular ( material | ui-router ) + Webpack + Karma + Jasmine
 
