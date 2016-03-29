@@ -1,4 +1,5 @@
 
 export default  {
-    template: '<h1>Hello World</h1>',
+    template: '<div ui-view="toolbar"></div>' +
+              '<h1>Hello World</h1>'
 };
