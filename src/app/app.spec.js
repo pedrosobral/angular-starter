@@ -1,10 +1,10 @@
-var app = require('./app.module.js');
+import app from './app.module';
 
-describe('App', function() {
+describe('App', () => {
 
     beforeEach(angular.mock.module(app.name));
 
-    it('it should have the correct id', function() {
+    it('it should have the correct id', () => {
     });
 
 

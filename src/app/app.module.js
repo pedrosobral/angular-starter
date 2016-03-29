@@ -1,5 +1,5 @@
-var angular = require('angular');
-var AppComponent = require('./app.component.js');
+import angular from 'angular';
+import AppComponent from './app.component';
 
 var app = angular
     .module('app', [])
@@ -7,4 +7,4 @@ var app = angular
 
 angular.bootstrap(document.body, ['app']);
 
-module.exports = app;
+export default app;
