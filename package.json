@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "start": "webpack-dev-server --progress --colors",
+    "e2e": "protractor src/e2e/conf.js"
   },
   "repository": {
     "type": "git",
