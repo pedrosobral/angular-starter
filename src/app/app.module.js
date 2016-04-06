@@ -14,6 +14,6 @@ let app = angular
     .component('app', AppComponent)
     .config(routes);
 
-angular.bootstrap(document.body, ['app']);
+// angular.bootstrap(document.body, ['app']);
 
 export default app;
